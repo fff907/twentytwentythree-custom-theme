@@ -27,8 +27,9 @@
     </div>
 
     <div class="pagination">
-        <?php the_post_pagination(); ?>
+        <?php the_posts_pagination(); ?>
     </div>
+
     <?php else : ?>
         <p>投稿が見つかりませんでした。</p>
     <?php endif; ?>
