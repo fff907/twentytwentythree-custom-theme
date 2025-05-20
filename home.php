@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="site-main" style="padding: 2rem; max-width: 900px; margin: 0 auto;">
-  <h1>最新のお知らせ</h1>
+    <h1>最新のお知らせ</h1>
 
 <?php if (have_posts()) : ?>
     <div class="post-list">
