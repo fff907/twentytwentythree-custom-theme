@@ -1,91 +1,35 @@
-=== Twenty Twenty-Three ===
-Contributors: wordpressdotorg
-Requires at least: 6.1
-Tested up to: 6.7
-Requires PHP: 5.6
-Stable tag: 1.6
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# twentytwentythree-custom-theme
 
-== Description ==
+このテーマは、WordPress公式テーマ「Twenty Twenty-Three」をベースに構築されたカスタムテーマです。  
+ローカル環境（Local WP）での動作を前提としており、主にテーマの構造理解と実装スキルの習得を目的としています。
 
-Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community.
+## 📌 主な変更点
 
-Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
+- `home.php` に WordPressループを用いた投稿一覧を追加
+- `single.php`, `page.php`, `404.php` を新規作成し、基本のテンプレート構成を整備
+- `functions.php` に `add_theme_support()` と `wp_enqueue_style()` を記述
+- `style.css` にシンプルなデザイン調整（タイトル色、画像スタイル、余白など）
 
-== Changelog ==
+## ✅ 使用したWordPress関数の例
 
-= 1.6 =
-* Released: November 12, 2024
+- `get_header()`, `get_footer()`
+- `have_posts()`, `the_post()`, `the_title()`, `the_permalink()`, `the_content()`
+- `the_post_thumbnail()`, `has_post_thumbnail()`
+- `the_time()`, `the_posts_pagination()`
 
-https://wordpress.org/documentation/article/twenty-twenty-three-changelog/#Version_1.6
+## 💡 本テーマの目的
 
-= 1.5 =
-* Released: July 16, 2024
+- WordPressテーマファイルの構成（index.php, home.php 等）と働きの理解
+- `functions.php` の役割の把握
+- CSSとPHPを用いた構造とデザインの分離
+- GitHubでのバージョン管理と公開テーマの作成
 
-https://wordpress.org/documentation/article/twenty-twenty-three-changelog/#Version_1.5
+## 🧩 今後の拡張予定（任意）
 
-= 1.4 =
-* Released: April 2, 2024
+- カスタム投稿タイプ・カスタムブロックの追加
+- デザイン強化（BEM設計やSass対応）
+- 実務で使える形への応用
 
-https://wordpress.org/documentation/article/twenty-twenty-three-changelog/#Version_1.4
+---
 
-= 1.3 =
-* Released: November 7, 2023
-
-https://wordpress.org/documentation/article/twenty-twenty-three-changelog/#Version_1.3
-
-= 1.2 =
-* Released: August 8, 2023
-
-https://wordpress.org/documentation/article/twenty-twenty-three-changelog/#Version_1.2
-
-= 1.1 =
-* Released: March 28, 2023
-
-https://wordpress.org/documentation/article/twenty-twenty-three-changelog/#Version_1.1
-
-= 1.0 =
-* Released: November 1, 2022
-
-https://wordpress.org/documentation/article/twenty-twenty-three-changelog/#Version_1.0
-
-== Copyright ==
-
-Twenty Twenty-Three WordPress Theme, (C) 2022-2024 WordPress.org and contributors.
-Twenty Twenty-Three is distributed under the terms of the GNU GPL.
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-
-This theme bundles the following third-party resources:
-
-DM Sans Font
-Copyright 2014-2017 Indian Type Foundry (info@indiantypefoundry.com)
-Copyright 2019 Google LLC
-Copyright 2014-2018 Adobe (http://www.adobe.com/)
-License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
-Source: https://github.com/googlefonts/dm-fonts
-
-IBM Plex Font
-Copyright 2017 IBM Corp.
-License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
-Source: https://github.com/IBM/plex
-
-Inter Font
-Copyright (c) 2016-2020 The Inter Project Authors.
-License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
-Source: https://github.com/rsms/inter
-
-Source Serif Font
-Copyright 2014-2021 Adobe (http://www.adobe.com/)
-License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
-Source: https://github.com/adobe-fonts/source-serif
+※本テーマは個人学習・ポートフォリオ用に作成したものであり、公式テーマとは関係ありません。
