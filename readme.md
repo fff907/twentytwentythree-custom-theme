@@ -78,14 +78,14 @@ add_action('wp_enqueue_scripts', 'custom_theme_enqueue_styles');
 
 ## 💡 このテーマ制作を通して得られたこと
 
-### WordPressテーマが有効になる条件】 
+### 【WordPressテーマが有効になる条件】 
 - index.php か templates/index.html がないと「テンプレートが不足しています」と表示され無効化される。  
 - style.css に Template: 行があると、親テーマを参照する子テーマとして認識されるため削除が必要だった。  
 
-### コンフリクトの対処  
+### 【コンフリクトの対処】  
 - Gitでの競合解消はマージエディタを活用したが、使い方に慣れるまでは混乱しやすかった。  
 
-### 細かいミスが重大なエラーに  
+### 【細かいミスが重大なエラーに】  
 - the_post_pagination()（誤） → the_posts_pagination()（正） のような1文字違いでループが破壊された。  
 
 ## 📝 今後、実務へ挑む心構えとして
