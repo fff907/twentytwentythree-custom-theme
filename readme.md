@@ -74,7 +74,6 @@ add_action('wp_enqueue_scripts', 'custom_theme_enqueue_styles');
 ### 4. GitHubの更新をローカルに取り込む
 `git pull origin main`  
 
----
 ### 用語の意味  
 - `add`　変更ファイルをGitの管理対象に追加（ステージング）  
 - `commit`　ステージの内容をスナップショットとして保存  
