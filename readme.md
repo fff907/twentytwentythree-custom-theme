@@ -3,6 +3,12 @@
 このテーマは、WordPress公式テーマ「Twenty Twenty-Three」をベースに構築されたカスタムテーマです。  
 ローカル環境（Local WP）での動作を前提としており、主にテーマの構造理解と実装スキルの習得を目的としています。
 
+## ⚙️ 開発環境
+
+- WordPress：6.5.2
+- PHP：8.1（Local WP環境）
+- テーマベース：Twenty Twenty-Three（ver. 1.6）
+
 ## 📌 主な変更点
 
 - `home.php` に WordPressループを用いた投稿一覧を追加
