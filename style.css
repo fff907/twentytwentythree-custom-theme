@@ -4,3 +4,26 @@ Author: fff907
 Description: Twenty Twenty-Three をベースにしたカスタムテーマ
 Version: 1.0
 */
+
+.post-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.post-item h2 a {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.post-thumbnail img {
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.post-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.3rem 0 0;
+}
